@@ -7,7 +7,7 @@ interface SubmitButtonProps {
 }
 
 const SubmitButton: React.FC<React.PropsWithChildren<SubmitButtonProps>> = ({ form, children }) => {
-  const [submittable, setSubmittable] = React.useState<boolean>(false);
+  const [submittable, setSubmittable] = useState<boolean>(false);
 
   // Watch all values
   const values = Form.useWatch([], form);
