@@ -1,0 +1,15 @@
+Explanation
+
+State Management:
+We use the useState hook to create a state variable isLoggedIn, which is initialized to false.
+
+Toggle Function:
+The toggleLogin function toggles the isLoggedIn state between true and false whenever the button is clicked.
+
+Conditional Rendering:
+The component checks the value of isLoggedIn:
+If true, it displays a greeting message.
+If false, it shows a login button.
+
+
+Using prevStatus ensures that no matter how many times you click the button, the state will always accurately reflect the current light status. This is important in cases where multiple updates might happen in quick succession, preventing potential issues with state inconsistencies.
